@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Shift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html">Scheduler</a>
+        <a href="whiteboard.html">Whiteboard</a>
+        <a href="am.html"> AM Shift</a>
+        <a href="pm.html"> PM Shift</a>
+        <a href="lunch.html" class="active"> Lunch Shift</a>
+    </div>
+    <div class="container">
+        <div class="bank-section">
+            <div class="bank">
+                <h2>Therapists</h2>
+                <ul id="therapist-bank">
+                    <!-- Therapist names will be added here -->
+                </ul>
+            </div>
+            <div class="bank">
+                <h2>Clients</h2>
+                <ul id="client-bank">
+                    <!-- Client names will be added here -->
+                </ul>
+            </div>
+        </div>
+        <table id="lunch-table">
+            <thead>
+                <tr>
+                    <th>Therapist 1</th>
+                    <th>Client 1</th>
+                    <th>Therapist 2</th>
+                    <th>Client 2</th>
+                    <th>Actions</th> <!-- Column for send-back buttons -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="RandomizeLunchSchedule" onclick="randomizeLunchSchedule()">Randomize</button>
+    </div>
+    <script src="lunch.js"></script>
+</body>
+</html>

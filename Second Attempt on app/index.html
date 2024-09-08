@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Clinic Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html">Scheduler</a>
+        <a href="whiteboard.html">Whiteboard</a>
+        <a href="am.html"> AM Shift</a>
+        <a href="pm.html"> PM Shift</a>
+        <a href="lunch.html"> Lunch Shift</a>
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <h1>Therapy Clinic Scheduler</h1>
+            <div class="input-group">
+                <label for="therapist-input">Therapist Name:</label>
+                <input type="text" id="therapist-input" placeholder="Enter therapist name" aria-label="Therapist Name">
+                <button onclick="submitTherapist()">Add Therapist</button>
+            </div>
+            <div class="input-group">
+                <label for="client-input">Client Name:</label>
+                <input type="text" id="client-input" placeholder="Enter client name" aria-label="Client Name">
+                <button onclick="submitClient()">Add Client</button>
+            </div>
+        </div>
+        <div class="list-section">
+            <div id="therapist-list">
+                <h2>Therapists</h2>
+                <ul></ul>
+            </div>
+            <div id="client-list">
+                <h2>Clients</h2>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

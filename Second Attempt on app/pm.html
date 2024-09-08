@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Shift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html">Scheduler</a>
+        <a href="whiteboard.html">Whiteboard</a>
+        <a href="am.html"> AM Shift</a>
+        <a href="pm.html"> PM Shift</a>
+        <a href="lunch.html"> Lunch Shift</a>
+    </div>
+    <div class="container">
+        <div class="bank-section">
+            <div class="bank">
+                <h2>Therapists</h2>
+                <ul id="therapist-bank">
+                    <!-- Therapist names will be added here -->
+                </ul>
+            </div>
+            <div class="bank">
+                <h2>Clients</h2>
+                <ul id="client-bank">
+                    <!-- Client names will be added here -->
+                </ul>
+            </div>
+        </div>
+        <table id="match-table">
+            <thead>
+                <tr>
+                    <th>Therapist</th>
+                    <th>Client</th>
+                    <th>Lock</th>
+                    <th>Actions</th> <!-- New column for sending back to the bank -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="randomizeButton" onclick="randomizePmSchedule()">Randomize</button>
+    </div>
+    <script src="pm.js"></script>
+</body>
+</html>

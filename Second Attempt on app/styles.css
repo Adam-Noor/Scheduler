@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.banner {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.banner a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.input-section {
+    width: 40%;
+}
+
+.list-section {
+    width: 50%;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+#therapist-list, #client-list {
+    margin-top: 20px;
+}
+
+#therapist-list ul, #client-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#therapist-list li, #client-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#therapist-list li:last-child, #client-list li:last-child {
+    border-bottom: none;
+}
+
+#therapist-list {
+    color: #007bff;
+}
+
+#client-list {
+    color: #28a745;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    color: #c82333;
+}
+/* Additional styles for the Whiteboard page */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td.draggable {
+    cursor: move;
+}
+
+.lock-icon {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.locked {
+    color: #007bff;
+}
+
+/* Banner styles */
+.banner {
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
+}
+
+.banner a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.banner a.active {
+    background-color: #0056b3;
+}
+
+
+#match-table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#match-table th, #match-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.droppable {
+    min-height: 40px;
+    background-color: #f0f0f0; /* Light background to make cells visible */
+}
+
+
+/* Styles for the therapist and client banks */
+.bank-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.droppable {
+    min-height: 40px;
+}
+
+.bank {
+    width: 45%;
+}
+
+.bank h2 {
+    text-align: center;
+}
+
+.bank ul {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 150px;
+    background-color: #f9f9f9;
+}
+
+.bank ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: move;
+}
+
+.bank ul li:last-child {
+    border-bottom: none;
+}
+/* Additional styles for the action buttons */
+table th, table td {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style adjustments for action buttons */
+.action-button {
+    background-color: #007bff; /* Default therapist color */
+    color: white;
+    border: none;
+    padding: 3px 8px; /* Make the buttons smaller */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px; /* Smaller font size */
+    margin: 2px; /* Add some margin between buttons */
+}
+
+.action-button.client {
+    background-color: #28a745; /* Client color */
+}
+
+.action-button:hover {
+    opacity: 0.8; /* Subtle hover effect */
+}
+
+/* Disabled button styling */
+.action-button.disabled {
+    background-color: #cccccc; /* Greyed out color */
+    cursor: not-allowed;
+}
+
+.lock-cell {
+    text-align: center;
+}
